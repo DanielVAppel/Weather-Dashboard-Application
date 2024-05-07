@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    color : rgb(236, 160, 27);
+    
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148623068.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+#weatherApp{
+    
+    height : 600px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    
+
+}
+#weatherApp .weather1{
+
+        background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png?resize=400x300&vertical=center");
+        
+        height: 350px;
+        width: 300px;
+        margin-top: 125px;
+        border: 1px solid black;
+}
+#weatherApp .weather2{
+
+        background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?resize=400x300&vertical=center");
+       
+        height: 350px;
+        width: 300px;
+        margin-top: 125px;
+        border: 1px solid black;
+}
+#weatherApp .weather3{
+
+        background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png?resize=400x300&vertical=center");
+       
+        height: 350px;
+        width: 300px;
+        margin-top: 125px;
+        
+        border: 1px solid black;
+}
+#weatherApp .weather4{
+
+        background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?resize=400x300&vertical=center");
+        height: 350px;
+        width: 300px;
+        margin-top: 125px;
+        
+        border: 1px solid black;
+}
+.weather-info h2{
+    color: rgb(236, 160, 27);
+    width: 100%;
+    height: 90%;
+
+}
+.weather-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.weather-info div{
+    border: 1px solid black;
+    background-color: rgba(240, 255, 255,0.8);
+    border-radius: 5px;
+    width:100px;
+    height: 75px;
+    margin-bottom : 10px;
+    text-align: center;
+    
+    
+}
+#high{
+    color : red;
+}
+#low{
+    color:rgb(80, 184, 225);
+}
+.weather-info div img{
+    width: 30px;
+    height: 20px;
+    
+}
+.weather-info span{
+    color: #797670;
+    
+}
