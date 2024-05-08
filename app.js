@@ -36,6 +36,12 @@ class Rainy extends WeatherData {
         this.backgroundImage = ("https://images.template.net/218832/rainy-sky-background-edit-online-1.jpg");
     }
 }
+class Foggy extends WeatherData {
+    constructor(name, temperature, min, max, humidity, feelsLike,wind, description) {
+        super(name, temperature, min, max, humidity, feelsLike,wind, description);
+        this.backgroundImage = ("https://i.pinimg.com/474x/3f/7d/fc/3f7dfc23856ed5e7dadbf6c8bec075c2.jpg");
+    }
+}
 // This function creates instances of WeatherData subclasses based off of the parameters
 function createWeatherInstance(name, temperature, min, max, humidity, feelsLike,wind, description) {
     if (description.toLowerCase().includes("clear")) {
@@ -46,7 +52,11 @@ function createWeatherInstance(name, temperature, min, max, humidity, feelsLike,
         return new Cloudy(name, temperature, min, max, humidity, feelsLike,wind, description);
     } else if (description.toLowerCase().includes("snow")) {
         return new Snowy(name, temperature, min, max, humidity, feelsLike,wind, description);
-    } else {
+    } 
+    else if (description.toLowerCase().includes("haze") || description.toLowerCase().includes("mist") || description.toLowerCase().includes("fog")) {
+        return new Foggy(name, temperature, min, max, humidity, feelsLike,wind, description);
+    } 
+    else {
         return new WeatherData(name, temperature, min, max, humidity, feelsLike,wind, description);
     }
 }
