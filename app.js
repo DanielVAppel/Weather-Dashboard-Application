@@ -11,6 +11,7 @@ class WeatherData {
         this.description = description;
     }
 }
+// Inherited subclasses from WeatherData, representing specific weather conditions
 class Sunny extends WeatherData {
     constructor(name, temperature, min, max, humidity, feelsLike, wind, description) {
         super(name, temperature, min, max, humidity, feelsLike,wind, description);
@@ -35,6 +36,7 @@ class Rainy extends WeatherData {
         this.backgroundImage = ("https://images.template.net/218832/rainy-sky-background-edit-online-1.jpg");
     }
 }
+// This function creates instances of WeatherData subclasses based off of the parameters
 function createWeatherInstance(name, temperature, min, max, humidity, feelsLike,wind, description) {
     if (description.toLowerCase().includes("clear")) {
         return new Sunny(name, temperature, min, max, humidity, feelsLike,wind, description);
@@ -77,6 +79,7 @@ function fetchWeather(SearchBtnID, weatherResultId, cityInputId, className) {
             });
     });
 }
+// This function displays the weather information on the webpage, including temperature, humidity, wind, etc...
 function displayWeather(weatherResultId, weatherData, className) {
     const result = `
         <div class = "weather-info">
